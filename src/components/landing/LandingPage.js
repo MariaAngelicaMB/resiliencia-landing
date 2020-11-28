@@ -4,7 +4,9 @@ import '../landing/LandingPage.css';
 import Logo from '../../assets/Logo.png';
 import Ilustra from '../../assets/float.svg';
 
-
+function alertMessage(){
+  alert("Enviado!")
+}
 
 function LandingPage() {
   return (
@@ -53,7 +55,7 @@ function LandingPage() {
             <input type="text" placeholder="Nome" />
             <input type="text" placeholder="Seu melhor email" />
 
-            <button type="submit">ENVIAR</button>
+            <button type="submit" onClick={alertMessage}>ENVIAR</button>
           </form>
         </div>
 
